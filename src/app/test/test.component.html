@@ -1,0 +1,32 @@
+
+<ul>
+    <li *ngFor="let team of Teams">
+        <span>{{team.id}} </span> <span>{{team.name}}</span> </li>
+</ul>
+
+<ul>
+    <li *ngFor="let squad of Squad">
+        <span>ID: {{squad.id}} </span> <span>Name: {{squad.name}} </span>Age: {{squad.age}}</li>
+</ul>
+
+<!-- <h2>{{Bob}}</h2> -->
+<input [(ngModel)]="Bob"/>
+<input #viewChildCheck placeholder="{{prop}}" style="margin: 2px;"/><button (click)="functionTwo()">Save {{happyCheck}}</button>
+<button (click)="loopForTheSake()">Increase</button>
+<button (click)="deLoopForTheSake()">Decrease</button> <br>
+
+<div class="mycontainer">
+
+<div class="itemOne">1 <span style="color: red;">{{Bob}}</span></div>
+<div class="itemTwo" >2 <span style="color: red;">{{Jack}}</span></div>
+<div class="itemThree">3</div>
+<div class="itemOne">4</div>
+<div class="itemOne">5</div>
+<div class="itemOne">6</div>
+<div class="itemOne">7</div>
+<div class="itemOne">8</div>
+
+</div>
+<!-- <button (click)="functionThree(nameone.value)">Log</button> -->
+
+<app-game></app-game>

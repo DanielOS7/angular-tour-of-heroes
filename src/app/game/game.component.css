@@ -1,0 +1,10 @@
+.canvas { 
+    width: 480px;
+    height: 320px;
+    background: lightblue;
+    display: block;
+    margin: 15px auto;
+    padding: 0px;
+    border: 4px solid black;
+
+}

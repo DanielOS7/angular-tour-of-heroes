@@ -1,0 +1,20 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details:</h2>
+  <div>
+    <span class="test">
+      <b>Hero ID: </b>
+    </span>{{hero.id}}</div>
+  <br>
+
+  <div>
+    <label>
+      <span class="test2">Edit Name: {{array}}</span>
+      <input [(ngModel)]="hero.name" placeholder="name">
+      <input #boxValue placeholder="Hello">
+
+    </label>
+  </div>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Back</button>
+  <button (click)="test(testValue)">Test</button>
+</div>
